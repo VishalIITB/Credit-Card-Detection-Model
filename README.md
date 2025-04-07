@@ -1,6 +1,6 @@
 # Credit-Card-Fraud-Detection
-## Credit Card Fraud Detection using Neural net | Hybrid CNN-LSTM Model
-This project involves detecting fraudulent transactions in a highly unbalanced dataset using a hybrid Convolutional Neural Network (CNN) and Long Short-Term Memory (LSTM) model enhanced with an attention mechanism.
+## Credit Card Fraud Detection using Neural net | Hybrid LSTM Model
+This project involves detecting fraudulent transactions in a highly unbalanced dataset using a hybrid  Long Short-Term Memory (LSTM) model enhanced with an attention mechanism.
 
 # Dataset
 The dataset used for this project is collected from European cardholder data of September 2023. It consists of 284,807 transactions that occurred in 2 days, out of which 492 are labeled as Fraud. This means that the dataset is highly unbalanced with only 0.172% accounting for the Fraud transactions. The dataset contains 31 features, where 28 (V1-V28) are the result of a PCA transformation due to confidentiality issues. The remaining features are:
@@ -13,14 +13,14 @@ Class: Label of the transaction (1 for Fraud, 0 for Genuine).
 The primary objective of this project is to detect fraudulent transactions using a neural network model, specifically focusing on improving the model's performance on an unbalanced dataset.
 
 # Model Architecture
-A hybrid CNN-LSTM model with an attention mechanism was developed. This approach leverages the feature extraction capabilities of CNNs and the temporal sequence learning of LSTMs, enhanced by an attention mechanism to focus on important features.
+A hybrid LSTM model with an attention mechanism was developed. This approach leverages the  temporal sequence learning of LSTMs, enhanced by an attention mechanism to focus on important features.
 
 # Techniques and Methods
 Data Balancing: Implemented Synthetic Minority Over-sampling Technique (SMOTE) to address the imbalance in the dataset, enhancing the model's performance in detecting fraudulent transactions.
 Performance Metrics: The model's performance was evaluated using accuracy and the ROC-AUC score.
 Experimental Design
 #Algorithm Selection
-The research focuses on whether the performance of a hybrid CNN-LSTM model significantly differs with the inclusion of an attention mechanism. The model's parameters were tuned using a combination of GridSearch and Trial-and-Error methods.
+The research focuses on whether the performance of a hybrid LSTM model significantly differs with the inclusion of an attention mechanism. The model's parameters were tuned using a combination of GridSearch and Trial-and-Error methods.
 
 # Testable Hypothesis
 The hypothesis tested is whether the inclusion of an attention mechanism in the hybrid CNN-LSTM model improves the performance on the Credit-Card Fraud dataset.
